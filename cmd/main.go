@@ -33,7 +33,7 @@ func main() {
 			HttpClient:   &http.Client{},
 		})
 
-	if err != nil {
+	if err != nil {	
 		panic(fmt.Sprintf("Cannot grant access token for imagestore: %v", err))
 	}
 	server := echo.New()
